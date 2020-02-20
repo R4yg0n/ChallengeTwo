@@ -1,0 +1,36 @@
+//Ryan & Matt C.
+public class ChallengeTwo {
+    public void ForLoop(){
+        List<integer> myList = new List<integer>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+         
+       /* for(integer count = 0; count > 9; count++)
+            myList.add(count++);*/
+            
+        for(integer i: myList)
+            system.debug(i);
+    }
+    
+    public void WhileLoop(){
+        integer I = 0;
+        while(I != 10){
+            system.debug(I);
+            I++;
+        }
+    }
+    
+    public void Iffy(){
+        boolean complete = false;
+        if(complete)
+            system.debug('Challenge Complete!');
+        else
+            system.debug('Challenge not Complete!');
+    }
+}
+
+
+Execute Log
+ChallengeTwo myChallenge = new ChallengeTwo();
+myChallenge.ForLoop();
+myChallenge.WhileLoop();
+myChallenge.Iffy();
+
